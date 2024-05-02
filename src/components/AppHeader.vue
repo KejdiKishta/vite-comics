@@ -65,9 +65,13 @@ export default {
     @use "../style/partials/variables" as *;
 
     header {
-        @include flex (row, space-around, center);
+        @include flex (row, space-between, center);
         font-size: .8rem;
         padding: 20px 0;
+        width: 80%;
+        max-width: 1100px;
+        margin: auto;
+
 
     }
     

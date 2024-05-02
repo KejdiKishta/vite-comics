@@ -32,7 +32,7 @@ export default {
   <AppHeader />
 
   <!-- main -->
-  <!-- <AppMain /> -->
+  <AppMain />
 
   <!-- nav -->
   <!-- <AppNav /> -->
