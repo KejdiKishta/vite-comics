@@ -68,7 +68,7 @@ export default {
         @include flex (row, space-between, center);
         font-size: .8rem;
         padding: 20px 0;
-        width: 80%;
+        width: 90%;
         max-width: 1100px;
         margin: auto;
 

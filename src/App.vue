@@ -38,7 +38,7 @@ export default {
   <AppNav />
 
   <!-- footer -->
-  <!-- <AppFooter /> -->
+  <AppFooter />
   
 </template>
 

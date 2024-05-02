@@ -22,7 +22,7 @@ export default {
         background-color: $black-color;
         
         h2 {
-            width: 80%;
+            width: 90%;
             max-width: 1100px;
             margin: auto;
             color: $white-color;
