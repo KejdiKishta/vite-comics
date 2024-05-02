@@ -87,7 +87,8 @@ export default {
         }
         
         .active {
-            border-bottom: 3px solid blue;
+            border-bottom: 3px solid $blue-color;
+            color: $blue-color;
             font-weight: bold;
         }
     }

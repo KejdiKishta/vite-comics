@@ -35,7 +35,7 @@ export default {
   <AppMain />
 
   <!-- nav -->
-  <!-- <AppNav /> -->
+  <AppNav />
 
   <!-- footer -->
   <!-- <AppFooter /> -->
