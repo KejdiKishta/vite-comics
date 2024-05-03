@@ -42,7 +42,7 @@ export default {
 
 <template>
     <section>
-        <div class="overlay">
+        <div class="overlay container">
             <nav>
                 <div>
                     <h3>DC COMICS</h3>
@@ -82,7 +82,6 @@ export default {
 
     section {
         background-image: url(../assets/img/footer-bg.jpg);
-        padding: 0 10%;
 
         .overlay {
             background-image: url(../assets/img/dc-logo-bg.png);

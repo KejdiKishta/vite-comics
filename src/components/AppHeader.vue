@@ -50,7 +50,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <div><img src="../assets/img/dc-logo.png" alt=""></div>
         <ul>
             <li v-for="link in headerNav">
@@ -72,7 +72,9 @@ export default {
         max-width: 1100px;
         margin: auto;
 
-
+        img {
+            max-height: 80px;
+        }
     }
     
     ul {

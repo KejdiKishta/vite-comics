@@ -36,7 +36,7 @@ export default {
 
 <template>
     <nav>
-        <ul>
+        <ul class="container">
             <li v-for="item in navList">
                 <img :src="getImagePath(item.icon)">
                 <div>{{ item.name }}</div>
@@ -51,7 +51,7 @@ export default {
 
     nav {
         background-color: $blue-color;
-        padding: 50px;
+        padding: 50px 0;
         color: $white-color;
 
         ul {
