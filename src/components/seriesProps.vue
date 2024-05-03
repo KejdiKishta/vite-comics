@@ -29,13 +29,15 @@ export default {
         width: 15%;
 
         img {
-            height: 200px;
+            height: 250px;
+            width: 100%;
         }
 
         h5 {
             color:white;
             font-size: .8rem;
             height: 40px;
+            margin: 15px 0;
         }
     }
 
