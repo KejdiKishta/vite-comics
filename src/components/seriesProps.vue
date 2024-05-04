@@ -27,14 +27,24 @@ export default {
 
     .card {
         width: 15%;
+        padding: 5px;
+        margin-bottom: 10px;
+
+        &:hover {
+            background-color: $white-color;
+
+            h5 {
+                color: $black-color;
+            }
+        }
 
         img {
-            height: 250px;
+            height: 230px;
             width: 100%;
         }
 
         h5 {
-            color:white;
+            color: $white-color;
             font-size: .8rem;
             height: 40px;
             margin: 15px 0;

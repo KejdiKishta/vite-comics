@@ -3,47 +3,24 @@ export default {
     data() {
         return {
             headerNav: [
-                {
-                    item: "CHARACTER",
-                    isActive: false
-                },
-                {
-                    item: "COMICS",
-                    isActive: true
-                },
-                {
-                    item: "MOVIES",
-                    isActive: false
-                },
-                {
-                    item: "TV",
-                    isActive: false
-                },
-                {
-                    item: "GAMES",
-                    isActive: false
-                },
-                {
-                    item: "COLLECTIBLES",
-                    isActive: false
-                },
-                {
-                    item: "VIDEOS",
-                    isActive: false
-                },
-                {
-                    item: "FANS",
-                    isActive: false
-                },
-                {
-                    item: "NEWS",
-                    isActive: false
-                },
-                {
-                    item: "SHOP",
-                    isActive: false
-                }
-            ]
+                "CHARACTER",
+                "COMICS",
+                "MOVIES",
+                "TV",
+                "GAMES",
+                "COLLECTIBLES",
+                "VIDEOS",
+                "FANS",
+                "NEWS",
+                "SHOP"
+            ],
+            activeIndex: 2,
+        }
+    },
+    methods: {
+        changeActive: function (index) {
+            this.activeIndex = index;
+            console.log(this.activeIndex);
         }
     }
 }
@@ -53,8 +30,8 @@ export default {
     <header class="container">
         <div><img src="../assets/img/dc-logo.png" alt=""></div>
         <ul>
-            <li v-for="link in headerNav">
-                <a href="#" :class="{'active': link.isActive}">{{ link.item }}</a>
+            <li v-for="(link, index) in headerNav">
+                <a href="#" :class="{'active': index === activeIndex}" @click="changeActive(index)">{{ link }}</a>
             </li>
         </ul>
     </header>
@@ -89,6 +66,12 @@ export default {
         }
         
         .active {
+            border-bottom: 3px solid $blue-color;
+            color: $blue-color;
+            font-weight: bold;
+        }
+
+        li:hover a{
             border-bottom: 3px solid $blue-color;
             color: $blue-color;
             font-weight: bold;

@@ -109,6 +109,10 @@ export default {
             li {
                 color:rgb(124 132 131);
                 padding: 3px;
+
+                &:hover {
+                    color: $white-color;
+                }
             }
         }
     }
