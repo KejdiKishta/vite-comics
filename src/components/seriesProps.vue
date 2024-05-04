@@ -32,6 +32,7 @@ export default {
 
         &:hover {
             background-color: $white-color;
+            cursor: pointer;
 
             h5 {
                 color: $black-color;
@@ -39,8 +40,8 @@ export default {
         }
 
         img {
-            height: 230px;
             width: 100%;
+            aspect-ratio: 0.7;
         }
 
         h5 {

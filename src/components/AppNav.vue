@@ -64,13 +64,12 @@ export default {
             @include flex (row, center, center);
             height: 50px;
             gap: 10px;
-        }
-
-        li:last-child {
             img {
-                width: 50%;
+                height: 50px;
+            }
+            div {
+                font-size: .8rem;
             }
         }
-
     }
 </style>
