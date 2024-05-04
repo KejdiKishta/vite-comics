@@ -3,11 +3,13 @@ Continuate a lavorare nella stessa repo di ieri e create un nuovo componente per
 Una volta inseriti tutti i contenuti dinamicamente, completate il vostro layout e rifinite i dettagli con Sass. -->
 
 <script>
+import ButtonProps from "./buttonProps.vue";
 import SeriesProps from "./seriesProps.vue";
 
 export default {
     components: {
-        SeriesProps
+        SeriesProps,
+        ButtonProps
     },
 
     data() {
@@ -52,13 +54,13 @@ export default {
                 {
                     "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg",
                     "price": "$3.99",
-                    "series": "BATMAN/SUPERMAN",
+                    "series": "BATMAN / SUPERMAN",
                     "type": "comic book"
                 },
                 {
                     "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg",
                     "price": "$4.99",
-                    "series": "BATMAN/SUPERMAN ANNUAL",
+                    "series": "BATMAN / SUPERMAN ANNUAL",
                     "type": "comic book"
                 },
                 {
@@ -85,7 +87,8 @@ export default {
                     "series": "CATWOMAN",
                     "type": "graphic novel"
                 }
-            ]
+            ],
+            btn: "LOAD MORE",
         }
     }
 }
@@ -99,6 +102,9 @@ export default {
             :cardThumb="card.thumb"
             :cardSeries="card.series"
             />
+        </div>
+        <div class="btn">
+            <buttonProps :text="btn" />
         </div>
     </main>
 </template>
@@ -114,8 +120,12 @@ export default {
         .container {
             @include flex (row, space-evenly, center);
             flex-wrap: wrap;
-
         }
+
+        .btn {
+            text-align: center;
+        }
+
     }
 
 </style>

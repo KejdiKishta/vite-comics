@@ -4,3 +4,10 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin button ($padding, $bg-color, $color, $border) {
+    padding: $padding;
+    background-color: $bg-color;
+    color: $color;
+    border: $border;
+}
